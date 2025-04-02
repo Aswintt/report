@@ -1,210 +1,341 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Single Page Report</title>
-        <link rel="stylesheet" href="assets/other/style.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Report by Aswin</title>
+    <link rel="stylesheet" href="assets/other/style.css" />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    </head>
-    <body>
-
-        <nav class="p-4 flex justify-between items-center shadow-md">
-            <div class="flex items-center">
-                <img src="assets/imgs/your-logo.png" alt="Logo" class="h-5 w-5 mr-2">
-                <span class="text-black font-semibold text-lg">Daily Progress Report</span>
-            </div>
-
-            <div class="text-black">
-                <span class="font-semibold" id="currentDate"></span>
-            </div>
-        </nav>
-
-        <div class="mx-auto mt-8 p-8 bg-white shadow-md rounded-md">
-            <div class="flex justify-between items-start">
-                <div class="flex items-center">
-                    <div class="rounded-full overflow-hidden h-16 w-16">
-                        <img src="assets/imgs/profile-photo.webp" alt="Profile Photo" class="h-full w-full object-cover">
-                    </div>
-                    <div class="ml-4">
-                        <h2 class="text-lg font-semibold text-blue-500">Msheed K</h2>
-                        <p class="text-gray-500">Site Engineer, MEP</p>
-                        <p class="text-gray-500">RimpeX</p>
-                    </div>
-                </div>
-
-                <div class="text-right">
-                    <h2 class="text-lg font-semibold text-blue-500">Business Tower Project</h2>
-                    <p class="text-gray-500">Dubai</p>
-                    <p class="text-gray-500">EMAAR Properties, AECOM, ALEC</p>
-                </div>
-            </div>
-            <div class="container mx-auto mt-8 p-10 bg-white shadow-md rounded-md">
-                <div class="flex justify-around">
-                  <div><span class="font-semibold">Activities</span></div>
-                  <div><span class="text-gray-500 font-semibold">12</span></div>
-                  <div><span class="text-blue-500 font-semibold">11</span></div>
-                  <div><span class="text-red-500 font-semibold">01</span></div>
-              </div>
-              <hr class="my-2 border-t-2 border-green-300">
-              <div class="flex justify-around">
-                  <div><p style="color:white; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Activitiessss</p></div>
-                  <div><span>Planned</span></div>
-                  <div><span>Progressed</span></div>
-                  <div><span>Idle</span></div>
-              </div>
-
-              <div class="mt-14 flex justify-around">
-                  <div><span class="font-semibold">Progress</span></div>
-                  <div><span class="text-gray-500 font-semibold">27.5%</span></div>
-                  <div><span class="text-blue-500 font-semibold">25.0%</span></div>
-                  <div><span class="text-red-500 font-semibold">-2.5%</span></div>
-              </div>
-              <hr class="my-2 border-t-2 border-green-300">
-              <div class="flex justify-around">
-                  <div><p style="color:white; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Progress</p></div>
-                  <div><span>Planned</span></div>
-                  <div><span>Actual</span></div>
-                  <div><span>Low</span></div>
-              </div>
-          </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body>
+    <nav class="p-4 flex justify-between items-center shadow-md">
+      <div class="flex items-center">
+        <img src="assets/imgs/your-logo.png" alt="Logo" class="h-5 w-5 mr-2" />
+        <span class="text-black font-semibold text-lg"
+          >Daily Progress Report</span
+        >
       </div>
-      <div class="mx-auto mt-8 p-8 bg-white shadow-md rounded-md">
-        <h2 class="text-lg font-semibold">Activities</h2>
 
-        <hr class="my-2 border-t-2 border-green-300">
+      <div class="text-black">
+        <span class="font-semibold" id="currentDate"></span>
+      </div>
+    </nav>
 
-        <div class="flex justify-between items-start">
-            <div class="flex items-center grid-rows-5">
-                <h1 class="p-8 text-6xl text-blue-500">1</h1>
-                <div class="ml-4">
-                    <h2 class="text-lg font-semibold text-blue-500">Block Works</h2>
-                    <p class="font-medium">Tower A > Level 25</p>
-                    <p class="text-gray-500">TA-L25-BW020</p>
-                </div>
-            </div>
-
-
-            <div class="text-right">
-                <p  class="text-4xl font-semibold text-blue-500">+15.7<small class="text-lg">%</small></p>
-                <p class="mt-3 px-6 py-1 bg-gray-400 font-semibold rounded-md">Achieved</p>
-            </div>
-        </div>
-        <div class="pl-28">
-            <p class="text-gray-500">Reported: <span class="text-black font-medium">Jamsheed MK</span> 10:20AM 12 Nov 23</p>
-            <p class="text-gray-500">Verified: <span class="text-black font-medium">Abdul Nazer MK</span> 10:20AM 12 Nov 23</p>
-        </div>
-        <hr class="mt-8 mb-2 border-t-2 border-green-300">
-
-        <div class="flex justify-between items-start">
-            <div class="flex items-center">
-                <h1 class="p-8 text-6xl text-blue-500">2</h1>
-                <div class="ml-4">
-                    <h2 class="text-lg font-semibold text-blue-500">Block Works</h2>
-                    <p class="font-medium">Tower A > Level 25</p>
-                    <p class="text-gray-500">TA-L25-BW020</p>
-                </div>
-            </div>
-
-
-            <div class="text-right">
-                <p  class="text-4xl font-semibold text-blue-500">+15.7<small class="text-lg">%</small></p>
-                <p class="mt-3 px-6 py-1 bg-blue-400 text-white font-semibold rounded-md">Low Progress</p>
-            </div>
-        </div>
-        <div class="pl-28 flex items-end">
-            <div class="overflow-hidden h-56 w-75  rounded-md shadow-md">
-                <img src="assets/imgs/placeholder.jpg" alt="Profile Photo" class="h-full w-full object-cover">
-            </div>
-            <div class="ml-10">
-               <p class="text-gray-500">Reported: <span class="text-black font-medium">Jamsheed MK</span> 10:20AM 12 Nov 23</p>
-               <p class="text-gray-500">Verified: <span class="text-black font-medium">Abdul Nazer MK</span> 10:20AM 12 Nov 23</p>
-           </div>
-       </div>
-
-       <hr class="mt-8 mb-2 border-t-2 border-green-300">
-
-       <div class="flex justify-between items-start">
+    <div class="mx-auto mt-8 p-8 bg-white shadow-md rounded-md">
+      <div class="flex justify-between items-start">
         <div class="flex items-center">
-            <h1 class="p-8 text-6xl text-blue-500">3</h1>
-            <div class="ml-4">
-                <h2 class="text-lg font-semibold text-blue-500">Block Works</h2>
-                <p class="font-medium">Tower A > Level 25</p>
-                <p class="text-gray-500">TA-L25-BW020</p>
-            </div>
+          <div class="rounded-full overflow-hidden h-16 w-16">
+            <img
+              src="assets/imgs/profile-photo.webp"
+              alt="Profile Photo"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="ml-4">
+            <h2 class="text-lg font-semibold text-blue-500">Msheed K</h2>
+            <p class="text-gray-500">Site Engineer, MEP</p>
+            <p class="text-gray-500">RimpeX</p>
+          </div>
         </div>
-
 
         <div class="text-right">
-            <p  class="text-4xl font-semibold text-blue-500">+15.7<small class="text-lg">%</small></p>
-            <p class="mt-3 px-6 py-1 bg-yellow-400 text-red-600 font-semibold rounded-md">Achieved</p>
+          <h2 class="text-lg font-semibold text-blue-500">
+            Business Tower Project
+          </h2>
+          <p class="text-gray-500">Dubai</p>
+          <p class="text-gray-500">EMAAR Properties, AECOM, ALEC</p>
         </div>
+      </div>
+      <div class="container mx-auto mt-8 p-10 bg-white shadow-md rounded-md">
+        <div class="flex justify-around">
+          <div><span class="font-semibold">Activities</span></div>
+          <div><span class="text-gray-500 font-semibold">12</span></div>
+          <div><span class="text-blue-500 font-semibold">11</span></div>
+          <div><span class="text-red-500 font-semibold">01</span></div>
+        </div>
+        <hr class="my-2 border-t-2 border-green-300" />
+        <div class="flex justify-around">
+          <div>
+            <p
+              style="
+                color: white;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              "
+            >
+              Activitiessss
+            </p>
+          </div>
+          <div><span>Planned</span></div>
+          <div><span>Progressed</span></div>
+          <div><span>Idle</span></div>
+        </div>
+
+        <div class="mt-14 flex justify-around">
+          <div><span class="font-semibold">Progress</span></div>
+          <div><span class="text-gray-500 font-semibold">27.5%</span></div>
+          <div><span class="text-blue-500 font-semibold">25.0%</span></div>
+          <div><span class="text-red-500 font-semibold">-2.5%</span></div>
+        </div>
+        <hr class="my-2 border-t-2 border-green-300" />
+        <div class="flex justify-around">
+          <div>
+            <p
+              style="
+                color: white;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              "
+            >
+              Progress
+            </p>
+          </div>
+          <div><span>Planned</span></div>
+          <div><span>Actual</span></div>
+          <div><span>Low</span></div>
+        </div>
+      </div>
     </div>
-    <div class="pl-28 flex items-end">
-        <div class="overflow-hidden h-56 w-75  rounded-md shadow-md">
-            <img src="assets/imgs/placeholder.jpg" alt="Profile Photo" class="h-full w-full object-cover">
+    <div class="mx-auto mt-8 p-8 bg-white shadow-md rounded-md">
+      <h2 class="text-lg font-semibold">Activities</h2>
+
+      <hr class="my-2 border-t-2 border-green-300" />
+
+      <div class="flex justify-between items-start">
+        <div class="flex items-center grid-rows-5">
+          <h1 class="p-8 text-6xl text-blue-500">1</h1>
+          <div class="ml-4">
+            <h2 class="text-lg font-semibold text-blue-500">Block Works</h2>
+            <p class="font-medium">Tower A > Level 25</p>
+            <p class="text-gray-500">TA-L25-BW020</p>
+          </div>
         </div>
-        <div class="ml-4 overflow-hidden h-56 w-75  rounded-md shadow-md">
-            <img src="assets/imgs/placeholder.jpg" alt="Profile Photo" class="h-full w-full object-cover">
+
+        <div class="text-right">
+          <p class="text-4xl font-semibold text-blue-500">
+            +15.7<small class="text-lg">%</small>
+          </p>
+          <p class="mt-3 px-6 py-1 bg-gray-400 font-semibold rounded-md">
+            Achieved
+          </p>
+        </div>
+      </div>
+      <div class="pl-28">
+        <p class="text-gray-500">
+          Reported:
+          <span class="text-black font-medium">Jamsheed MK</span> 10:20AM 12 Nov
+          23
+        </p>
+        <p class="text-gray-500">
+          Verified:
+          <span class="text-black font-medium">Abdul Nazer MK</span> 10:20AM 12
+          Nov 23
+        </p>
+      </div>
+      <hr class="mt-8 mb-2 border-t-2 border-green-300" />
+
+      <div class="flex justify-between items-start">
+        <div class="flex items-center">
+          <h1 class="p-8 text-6xl text-blue-500">2</h1>
+          <div class="ml-4">
+            <h2 class="text-lg font-semibold text-blue-500">Block Works</h2>
+            <p class="font-medium">Tower A > Level 25</p>
+            <p class="text-gray-500">TA-L25-BW020</p>
+          </div>
+        </div>
+
+        <div class="text-right">
+          <p class="text-4xl font-semibold text-blue-500">
+            +15.7<small class="text-lg">%</small>
+          </p>
+          <p
+            class="mt-3 px-6 py-1 bg-blue-400 text-white font-semibold rounded-md"
+          >
+            Low Progress
+          </p>
+        </div>
+      </div>
+      <div class="pl-28 flex items-end">
+        <div class="overflow-hidden h-56 w-75 rounded-md shadow-md">
+          <img
+            src="assets/imgs/placeholder.jpg"
+            alt="Profile Photo"
+            class="h-full w-full object-cover"
+          />
         </div>
         <div class="ml-10">
-           <p class="text-gray-500">Reported: <span class="text-black font-medium">Jamsheed MK</span> 10:20AM 12 Nov 23</p>
-           <p class="text-gray-500">Verified: <span class="text-black font-medium">Abdul Nazer MK</span> 10:20AM 12 Nov 23</p>
-       </div>
-   </div>
-   <div class="pl-28 mt-8">
-       <div class="p-3 border-l-8 border-blue-800 bg-blue-100 grid grid-rows-1 grid-flow-col gap-4 items-center">
+          <p class="text-gray-500">
+            Reported:
+            <span class="text-black font-medium">Jamsheed MK</span> 10:20AM 12
+            Nov 23
+          </p>
+          <p class="text-gray-500">
+            Verified:
+            <span class="text-black font-medium">Abdul Nazer MK</span> 10:20AM
+            12 Nov 23
+          </p>
+        </div>
+      </div>
+
+      <hr class="mt-8 mb-2 border-t-2 border-green-300" />
+
+      <div class="flex justify-between items-start">
+        <div class="flex items-center">
+          <h1 class="p-8 text-6xl text-blue-500">3</h1>
+          <div class="ml-4">
+            <h2 class="text-lg font-semibold text-blue-500">Block Works</h2>
+            <p class="font-medium">Tower A > Level 25</p>
+            <p class="text-gray-500">TA-L25-BW020</p>
+          </div>
+        </div>
+
+        <div class="text-right">
+          <p class="text-4xl font-semibold text-blue-500">
+            +15.7<small class="text-lg">%</small>
+          </p>
+          <p
+            class="mt-3 px-6 py-1 bg-yellow-400 text-red-600 font-semibold rounded-md"
+          >
+            Achieved
+          </p>
+        </div>
+      </div>
+      <div class="pl-28 flex items-end">
+        <div class="overflow-hidden h-56 w-75 rounded-md shadow-md">
+          <img
+            src="assets/imgs/placeholder.jpg"
+            alt="Profile Photo"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div class="ml-4 overflow-hidden h-56 w-75 rounded-md shadow-md">
+          <img
+            src="assets/imgs/placeholder.jpg"
+            alt="Profile Photo"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div class="ml-10">
+          <p class="text-gray-500">
+            Reported:
+            <span class="text-black font-medium">Jamsheed MK</span> 10:20AM 12
+            Nov 23
+          </p>
+          <p class="text-gray-500">
+            Verified:
+            <span class="text-black font-medium">Abdul Nazer MK</span> 10:20AM
+            12 Nov 23
+          </p>
+        </div>
+      </div>
+      <div class="pl-28 mt-8">
+        <div
+          class="p-3 border-l-8 border-blue-800 bg-blue-100 grid grid-rows-1 grid-flow-col gap-4 items-center"
+        >
           <p class="font-bold">Delayed Start</p>
           <p class="text-2xl ml-4 font-medium text-blue-500">+5 Days</p>
           <div>
-              <p class="text-gray-500">Reason: <span class="text-blue-500 font-semibold text-lg">Resources: </span><span class="text-black font-medium">Material delivery delay bt supplier ABC</span></p>
-           <p class="text-gray-500">Reported: <span class="text-black">Jamsheed </span>10 Nov 23</p>
+            <p class="text-gray-500">
+              Reason:
+              <span class="text-blue-500 font-semibold text-lg"
+                >Resources: </span
+              ><span class="text-black font-medium"
+                >Material delivery delay bt supplier ABC</span
+              >
+            </p>
+            <p class="text-gray-500">
+              Reported: <span class="text-black">Jamsheed </span>10 Nov 23
+            </p>
           </div>
-          
-      </div>
+        </div>
       </div>
       <div class="pl-28 mt-8">
-       <div class="p-3 border-l-8 border-yellow-600 bg-yellow-100 grid grid-rows-1 grid-flow-col gap-4 items-center">
+        <div
+          class="p-3 border-l-8 border-yellow-600 bg-yellow-100 grid grid-rows-1 grid-flow-col gap-4 items-center"
+        >
           <p class="font-bold">Low Progress</p>
           <div>
-              <p class="text-gray-500">Reason: <span class="text-blue-500 font-semibold text-lg">Resources: </span><span class="text-black font-medium">Material delivery delay bt supplier ABC</span></p>
-           <p class="text-gray-500">Reported: <span class="text-black">Jamsheed </span>10 Nov 23</p>
-           <p class="text-gray-500">Resp: <span class="text-black font-medium">EMAAR Properties</span></p>
+            <p class="text-gray-500">
+              Reason:
+              <span class="text-blue-500 font-semibold text-lg"
+                >Resources: </span
+              ><span class="text-black font-medium"
+                >Material delivery delay bt supplier ABC</span
+              >
+            </p>
+            <p class="text-gray-500">
+              Reported: <span class="text-black">Jamsheed </span>10 Nov 23
+            </p>
+            <p class="text-gray-500">
+              Resp: <span class="text-black font-medium">EMAAR Properties</span>
+            </p>
           </div>
-          <div class="pt-12 text-right text-gray-500"><p>Issue: <span class="font-medium text-black">Active</span></p></div>
-          
-      </div>
+          <div class="pt-12 text-right text-gray-500">
+            <p>Issue: <span class="font-medium text-black">Active</span></p>
+          </div>
+        </div>
       </div>
       <div class="pl-28 mt-8">
-       <div class="p-3 border-l-8 border-green-800 bg-green-100 grid grid-rows-1 grid-flow-col gap-4 items-center">
+        <div
+          class="p-3 border-l-8 border-green-800 bg-green-100 grid grid-rows-1 grid-flow-col gap-4 items-center"
+        >
           <p class="font-bold">Event Category</p>
           <div>
-              <p class="text-gray-500">Reason: <span class="text-blue-500 font-semibold text-lg">Resources: </span><span class="text-black font-medium">Material delivery delay bt supplier ABC</span></p>
-           <p class="text-gray-500">Reported: <span class="text-black">Jamsheed </span>10 Nov 23</p>
-           <p class="text-gray-500">Resp: <span class="text-black font-medium">EMAAR Properties</span></p>
+            <p class="text-gray-500">
+              Reason:
+              <span class="text-blue-500 font-semibold text-lg"
+                >Resources: </span
+              ><span class="text-black font-medium"
+                >Material delivery delay bt supplier ABC</span
+              >
+            </p>
+            <p class="text-gray-500">
+              Reported: <span class="text-black">Jamsheed </span>10 Nov 23
+            </p>
+            <p class="text-gray-500">
+              Resp: <span class="text-black font-medium">EMAAR Properties</span>
+            </p>
           </div>
-          <div class="pt-12 text-right text-gray-500"><p>Issue: <span>Closed</span></p></div>
-          
+          <div class="pt-12 text-right text-gray-500">
+            <p>Issue: <span>Closed</span></p>
+          </div>
+        </div>
       </div>
-      </div>
-</div>
+    </div>
 
-<br>
-<table>
-    <thead>  
+    <br />
+    <table>
+      <thead>
         <tr>
           <th data-type="numeric">ID <span class="resize-handle"></span></th>
-          <th data-type="text-short">First name <span class="resize-handle"></span></th>
-          <th data-type="text-short">Last name <span class="resize-handle"></span></th>
-          <th data-type="text-short">Email <span class="resize-handle"></span></th>
-          <th data-type="text-long">Street <span class="resize-handle"></span></th>
-          <th data-type="text-short">Country <span class="resize-handle"></span></th>
-          <th data-type="text-long">University <span class="resize-handle"></span></th>
-      </tr>
-  </thead> 
-  <tbody>
-      <tr>
+          <th data-type="text-short">
+            First name <span class="resize-handle"></span>
+          </th>
+          <th data-type="text-short">
+            Last name <span class="resize-handle"></span>
+          </th>
+          <th data-type="text-short">
+            Email <span class="resize-handle"></span>
+          </th>
+          <th data-type="text-long">
+            Street <span class="resize-handle"></span>
+          </th>
+          <th data-type="text-short">
+            Country <span class="resize-handle"></span>
+          </th>
+          <th data-type="text-long">
+            University <span class="resize-handle"></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td>000001</td>
           <td>Lani</td>
           <td>Ovendale</td>
@@ -212,8 +343,8 @@
           <td>7850 Old Shore Drive</td>
           <td>United Kingdom</td>
           <td>University of Plymouth</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000002</td>
           <td>Israel</td>
           <td>Tassell</td>
@@ -221,8 +352,8 @@
           <td>245 Merchant Circle</td>
           <td>Macedonia</td>
           <td>South East European University</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000003</td>
           <td>Eveleen</td>
           <td>Mercer</td>
@@ -230,8 +361,8 @@
           <td>70700 Kipling Pass</td>
           <td>Portugal</td>
           <td>Instituto Superior Novas Profissões - INP</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000004</td>
           <td>Conn</td>
           <td>Whitley</td>
@@ -239,8 +370,8 @@
           <td>03 Service Terrace</td>
           <td>Albania</td>
           <td>Epoka University</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000005</td>
           <td>Cherye</td>
           <td>Smitheram</td>
@@ -248,8 +379,8 @@
           <td>9 Eliot Parkway</td>
           <td>Indonesia</td>
           <td>Universitas Mahasaraswati Denpasar</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000006</td>
           <td>Bunnie</td>
           <td>Sked</td>
@@ -257,8 +388,8 @@
           <td>03418 Ludington Plaza</td>
           <td>Nigeria</td>
           <td>Federal University of Technology, Minna</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000007</td>
           <td>Helaine</td>
           <td>Crother</td>
@@ -266,8 +397,8 @@
           <td>7932 Sloan Park</td>
           <td>Philippines</td>
           <td>Saint Ferdinand College</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000008</td>
           <td>Tana</td>
           <td>Ajean</td>
@@ -275,8 +406,8 @@
           <td>2 Schurz Junction</td>
           <td>China</td>
           <td>Xi'an University of Electronic Science and Technology</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000009</td>
           <td>Sollie</td>
           <td>Greenrde</td>
@@ -284,8 +415,8 @@
           <td>055 Mockingbird Way</td>
           <td>Russia</td>
           <td>St. Petersburg State Mining Institute (Technical University)</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000010</td>
           <td>Vernon</td>
           <td>Millington</td>
@@ -293,17 +424,17 @@
           <td>74 David Pass</td>
           <td>Portugal</td>
           <td>Instituto Politécnico de Setúbal</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000011</td>
           <td>Willard</td>
           <td>Speares</td>
           <td>wspearesa@hao123.com</td>
           <td>4237 Moulton Park</td>
           <td>China</td>
-          <td>Chongqing University of Science and Technology </td>
-      </tr>
-      <tr>
+          <td>Chongqing University of Science and Technology</td>
+        </tr>
+        <tr>
           <td>000012</td>
           <td>Minette</td>
           <td>Adderson</td>
@@ -311,8 +442,8 @@
           <td>20 Westridge Crossing</td>
           <td>Philippines</td>
           <td>University of lloilo</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000013</td>
           <td>Madonna</td>
           <td>Richemont</td>
@@ -320,8 +451,8 @@
           <td>46 Sherman Avenue</td>
           <td>Pakistan</td>
           <td>Punjab Institute of Computer science</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000014</td>
           <td>Osbourne</td>
           <td>Roscoe</td>
@@ -329,8 +460,8 @@
           <td>40 Sunnyside Lane</td>
           <td>South Africa</td>
           <td>University of South Africa</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000015</td>
           <td>Kath</td>
           <td>Hancock</td>
@@ -338,8 +469,8 @@
           <td>18570 Starling Pass</td>
           <td>Indonesia</td>
           <td>Politeknik Negeri Sambas</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000016</td>
           <td>Aleta</td>
           <td>Doughartie</td>
@@ -347,8 +478,8 @@
           <td>1440 Cherokee Place</td>
           <td>China</td>
           <td>Shenyang Pharmaceutical University</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000017</td>
           <td>Mirilla</td>
           <td>Worland</td>
@@ -356,8 +487,8 @@
           <td>46597 Sunnyside Crossing</td>
           <td>Sweden</td>
           <td>Mälardalen University</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000018</td>
           <td>Jena</td>
           <td>Creddon</td>
@@ -365,8 +496,8 @@
           <td>611 Hanover Point</td>
           <td>New Zealand</td>
           <td>Christchurch Polytechnic Institute of Technology</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000019</td>
           <td>De witt</td>
           <td>Hellcat</td>
@@ -374,8 +505,8 @@
           <td>3183 Cascade Drive</td>
           <td>Indonesia</td>
           <td>Institut Teknologi Bandung</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000020</td>
           <td>Cleon</td>
           <td>Medgwick</td>
@@ -383,8 +514,8 @@
           <td>5712 Drewry Avenue</td>
           <td>China</td>
           <td>Shanghai University</td>
-      </tr>
-      <tr>
+        </tr>
+        <tr>
           <td>000021</td>
           <td>Caressa</td>
           <td>Aberchirder</td>
@@ -392,12 +523,10 @@
           <td>97 Fallview Junction</td>
           <td>France</td>
           <td>Université de Technologie de Compiègne</td>
-      </tr>
+        </tr>
+      </tbody>
+    </table>
 
-  </tbody>
-</table>
-
-<script src="assets/other/app.js"></script>
-
-</body>
+    <script src="assets/other/app.js"></script>
+  </body>
 </html>
